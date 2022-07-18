@@ -113,20 +113,86 @@
 //   );
 // }
 
-let goodVision = false;
-let hasLicense = true;
+// let goodVision = false;
+// let hasLicense = true;
 
-if (goodVision && hasLicense) {
-  console.log(`sarah can Drive `);
-} else {
-  console.log("Someone else should drive");
-  if (goodVision === true) {
-    console.log("Sarah need Driver license");
+// if (goodVision && hasLicense) {
+//   console.log(`sarah can Drive `);
+// } else {
+//   console.log("Someone else should drive");
+//   if (goodVision === true) {
+//     console.log("Sarah need Driver license");
+//   } else {
+//     console.log(" Sarah need glasses");
+
+//     if (hasLicense === false) {
+//       console.log("sarah need license too");
+//     }
+//   }
+// }
+
+//coding challenge 3
+
+let dolphinsAvg, koalasAvg;
+
+// dolphinsAvg = (96 + 108 + 89) / 3;
+// koalasAvg = (100 + 88 + 110) / 3;
+
+// dolphinsAvg = (97 + 112 + 101) / 3;
+// koalasAvg = (109 + 95 + 123) / 3;
+
+dolphinsAvg = (90 + 103 + 101) / 3;
+koalasAvg = (100 + 95 + 99) / 3;
+
+console.log("Koalas " + koalasAvg);
+console.log("dolphins " + dolphinsAvg);
+
+if (dolphinsAvg > koalasAvg) {
+  if (dolphinsAvg >= 100) {
+    console.log("Dolphins are the winner");
   } else {
-    console.log(" Sarah need glasses");
-
-    if (hasLicense === false) {
-      console.log("sarah need license too");
-    }
+    console.log(
+      "Dolphins got highest avg but failed to secure 100 avg points. "
+    );
   }
+} else if (dolphinsAvg === koalasAvg) {
+  if (dolphinsAvg >= 100 && koalasAvg >= 100) {
+    console.log("The match is tied");
+  } else {
+    console.log("Nobody wins hehe lol");
+  }
+} else {
+  if (koalasAvg >= 100) {
+    console.log("Koalas are the winner");
+  } else {
+    console.log("Koalas got highest avg but failed to secure 100 avg points. ");
+  }
+}
+
+//switch case statement
+
+let day = "monday";
+
+switch (day) {
+  case "monday":
+    console.log("go to gym");
+    break;
+
+  case "tuesday":
+    console.log("go to swim");
+    break;
+
+  case "wednesday":
+  case "thursday":
+    console.log("do absolutely nothing and blame my fate for being poor af");
+    break;
+
+  case "friday":
+  case "saturday":
+  case "sunday":
+    console.log("enjoy my well deserved weekend ");
+    break;
+
+  default:
+    console.log("invalid input");
 }
