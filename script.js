@@ -65,29 +65,68 @@
 
 //coding challenge
 
-let markWeight, markheight, johnWeight, johnHeight;
+// let markWeight, markheight, johnWeight, johnHeight;
 
-markWeight = 78;
-markheight = 1.69;
+// markWeight = 78;
+// markheight = 1.69;
 
-let markBMI = markWeight / markheight ** 2;
-console.log("Mark BMI : " + markBMI);
+// let markBMI = markWeight / markheight ** 2;
+// console.log("Mark BMI : " + markBMI);
 
-johnWeight = 92;
-johnHeight = 1.95;
+// johnWeight = 92;
+// johnHeight = 1.25;
 
-let johnBMI = johnWeight / johnHeight ** 2;
-console.log("John BMI : " + johnBMI);
+// let johnBMI = johnWeight / johnHeight ** 2;
+// console.log("John BMI : " + johnBMI);
 
-let bmiCompare = markBMI > johnBMI;
+// if (markBMI > johnBMI) {
+//   console.log(`Mark BMI is higher than Johns BMI`);
+//   console.log(`Mark BMI ${markBMI} is higher than Johns BMI ${johnBMI}`);
+// } else {
+//   console.log(`Johns BMI is higher than marks`);
+//   console.log(`Johns BMI ${johnBMI} is higher than MArks BMI ${markBMI}`);
+// }
 
-console.log("mark has greater BMI than John? " + bmiCompare);
+// const firstName = "sakib";
+// const job = "web developer";
+// const birthYear = 1998;
+// const currentYear = 2022;
 
-const firstName = "sakib";
-const job = "web developer";
-const birthYear = 1998;
-const currentYear = 2022;
+// let mydetail = "I am a " + (currentYear - birthYear) + " years old " + job;
 
-let mydetail = "I am a " + (currentYear - birthYear) + " years old " + job;
+// console.log(mydetail);
 
-console.log(mydetail);
+// let myNewDetail = `I am ${firstName} a ${currentYear - birthYear} old ${job}`;
+
+// console.log(myNewDetail);
+
+// let sarahAge = 10;
+// let isOldEnough = sarahAge >= 18;
+
+// let notOldEnough = 18 - sarahAge;
+
+// if (isOldEnough) {
+//   console.log("Sarah is eligible for friving lisence 🚒");
+// } else {
+//   console.log(
+//     `Sarah is too young. she needs to wait ${notOldEnough} years to get a license`
+//   );
+// }
+
+let goodVision = false;
+let hasLicense = true;
+
+if (goodVision && hasLicense) {
+  console.log(`sarah can Drive `);
+} else {
+  console.log("Someone else should drive");
+  if (goodVision === true) {
+    console.log("Sarah need Driver license");
+  } else {
+    console.log(" Sarah need glasses");
+
+    if (hasLicense === false) {
+      console.log("sarah need license too");
+    }
+  }
+}
