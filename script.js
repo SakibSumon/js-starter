@@ -71,15 +71,23 @@ markWeight = 78;
 markheight = 1.69;
 
 let markBMI = markWeight / markheight ** 2;
-console.log('Mark BMI : '+markBMI);
+console.log("Mark BMI : " + markBMI);
 
 johnWeight = 92;
 johnHeight = 1.95;
 
 let johnBMI = johnWeight / johnHeight ** 2;
-console.log('John BMI : ' + johnBMI);
+console.log("John BMI : " + johnBMI);
 
 let bmiCompare = markBMI > johnBMI;
 
 console.log("mark has greater BMI than John? " + bmiCompare);
- 
+
+const firstName = "sakib";
+const job = "web developer";
+const birthYear = 1998;
+const currentYear = 2022;
+
+let mydetail = "I am a " + (currentYear - birthYear) + " years old " + job;
+
+console.log(mydetail);
